@@ -12,33 +12,7 @@
 </head>
 <body>
     <div id="wrapper">
-        <header id="header">
-            <div class="hd-wrap inner dis-flex">
-                <div class="logo">LOGO</div>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="members.html">Members</a></li>
-                        <li><a href="project.html">Project</a></li>
-                        <li><a href="publications.html">Publications</a></li>
-                    </ul>
-                </nav>
-                <div class="all-menu">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
-                <nav class="m-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="members.html">Members</a></li>
-                        <li><a href="project.html">Project</a></li>
-                        <li><a href="publications.html">Publications</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <div id="header-wrap"></div>
         
         <div class="sub-wrap project">
             <div class="inner">
@@ -111,13 +85,16 @@
             </div>
         </div>
 
-        <footer class="footer dis-flex">
-            <div class="inner">
-                <div class="copyright">&copy; copyright</div>
-            </div>
-        </footer>
+        <div id="footer-wrap"></div>
 
         <div class="top-btn"><a href="#">TOP</a></div>
+
+        <script>
+            $(function(){
+                $("#header-wrap").load("header.html");
+                $("#footer-wrap").load("footer.html");
+            });
+        </script>
     </div>
 </body>
 </html>
