@@ -22,7 +22,7 @@ input:focus {outline:none}
 a {color:inherit;text-decoration:none}
 
 .inner {width:100%;max-width:1200px;margin:0 auto}
-.dis-flex {display:flex}
+.dis-flex {display:flex;align-items:center}
 .sub-wrap .s-title {display:block;font-size:2.625rem;font-weight:600}
 
 .nav ul {display:flex}
@@ -36,7 +36,7 @@ a {color:inherit;text-decoration:none}
 .top-btn {display:none;position:fixed;z-index:99;right:20px;bottom:20px;width:50px;height:50px;border-radius:50%;background:#000}
 .top-btn > a {display:block;color:#fefefe;text-align:center;line-height:50px;font-weight:600;font-size:.813rem}
 #header {position:relative}
-#header .hd-wrap {position:relative;justify-content:space-between}
+#header .hd-wrap {position:relative;justify-content:space-between;align-items:center}
 #header .all-menu {display:none;z-index:99;position:absolute;top:50%;right:0;width:50px;height:50px;transform:translateY(-50%);-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);cursor:pointer}
 #header .all-menu span {position:absolute;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);display:block;width:27px;height:3px;background-color:rgba(0,0,0,.8);transition-duration:.4s}
 #header .all-menu span:nth-child(1) {top:.938rem}
