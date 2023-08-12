@@ -76,7 +76,6 @@ a {color:inherit;text-decoration:none}
 .sub-wrap.members .group img {width:100%}
 .sub-wrap.members .member-list {padding:4rem 0}
 .sub-wrap.members .list {width:calc(25% - 2%);padding:0 1%;margin-bottom:2.5rem}
-.sub-wrap.members .list:last-child {margin-bottom:0}
 .sub-wrap.members .list ul li {padding-bottom:.5rem;text-align:center}
 .sub-wrap.members .list .image {margin-bottom:1rem}
 .sub-wrap.members .member {flex-wrap:wrap;justify-content:flex-start}
