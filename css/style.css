@@ -111,7 +111,7 @@ a {color:inherit;text-decoration:none}
 .sub-wrap.publi .pub-cont .pub-list {margin-bottom:1.5rem}
 .sub-wrap.publi .pub-cont .pub-list:last-child {margin-bottom:0}
 .sub-wrap.publi .pub-cont .pub-list > strong {display:block;margin-bottom:.5rem;font-weight:500;line-height:1.35}
-.sub-wrap.publi .pub-cont .pub-list > p {font-size:.938rem;color:#6e6e6e}
+.sub-wrap.publi .pub-cont .pub-list > p {font-size:.938rem;color:#6e6e6e;margin-bottom:.5rem}
 .sub-wrap.publi .pub-cont .pub-list .button {display:inline-block;margin-top:.625rem;padding:.5rem 2rem;background:#00cc98;font-size:.875rem;font-weight:600;color:#fefefe}
 
 
