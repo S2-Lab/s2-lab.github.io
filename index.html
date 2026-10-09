@@ -5,30 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S2Lab - home</title>
     <link rel="stylesheet" href="css/style.css">
-	<link href="css/bootstrap.min.css" rel="stylesheet"/>
-	<link href="css/fontawesome.min.css" rel="stylesheet"/>
-	<link href="css/academicons.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/fontawesome.min.css" rel="stylesheet"/>
+    <link href="css/academicons.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
-    <link rel="shortcut icon" type ="image/x-icon" href="https://s2-lab.github.io/img/icon.jpeg">
+    <link rel="shortcut icon" type="image/x-icon" href="https://s2-lab.github.io/img/icon.jpeg">
+
+    <style>
+
+    /* Version 5 — Modern focus cards + refined news feed */
+    .s2-home { --accent:#00a982; --ink:#172129; --muted:#657078; --line:#e3e9ec; --soft:#f5f8f8; }
+    .s2-home * { box-sizing:border-box; }
+    .s2-home .overview {
+        position:relative; margin:0 0 2.2rem; padding:1.6rem 1.7rem 1.55rem 1.8rem;
+        border:1px solid var(--line); border-radius:14px; background:#fff;
+        box-shadow:0 8px 26px rgba(14,40,33,.055);
+    }
+    .s2-home .overview::before {
+        content:"S2 LAB RESEARCH"; display:block; margin-bottom:.6rem;
+        color:#008b6d; font-size:.72rem; font-weight:800; letter-spacing:.12em;
+    }
+    .s2-home .overview p { margin:0; max-width:1030px; font-size:1.02rem; line-height:1.75; color:var(--ink); }
+    .s2-home .section-heading { margin:0 0 1rem; font-size:1.2rem; font-weight:750; color:var(--ink); }
+    .s2-home .research-grid {
+        display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.9rem; margin-bottom:1.4rem;
+    }
+    .s2-home .focus-card {
+        display:flex; gap:1rem; padding:1.2rem 1.25rem; border:1px solid var(--line);
+        border-radius:12px; background:#fff;
+    }
+    .s2-home .focus-card:last-child { grid-column:1/-1; }
+    .s2-home .focus-number {
+        flex:0 0 38px; width:38px; height:38px; display:flex; align-items:center; justify-content:center;
+        border-radius:9px; background:#132c26; color:#67ddbb; font-size:.9rem; font-weight:800;
+    }
+    .s2-home .focus-copy h3 { margin:.05rem 0 .35rem; font-size:.96rem; font-weight:750; color:var(--ink); }
+    .s2-home .focus-copy p { margin:0; font-size:.84rem; line-height:1.52; color:#59636a; }
+    .s2-home .join-box {
+        margin:1.5rem 0 2.8rem; padding:1.2rem 1.35rem; border-radius:12px;
+        background:#ecf8f5; border:1px solid #d1ebe4;
+    }
+    .s2-home .join-box p { margin:0; font-size:.89rem; line-height:1.65; }
+    .s2-home .join-box strong { font-weight:750; }
+    .s2-home .join-box a { color:#007d61; font-weight:750; }
+    .s2-home .news-panel {
+        padding:1.35rem 1.45rem 1.1rem; border:1px solid var(--line); border-radius:14px; background:#fff;
+    }
+    .s2-home .news-panel h5 { margin:0 0 .9rem; font-size:1.2rem; font-weight:750; }
+    .s2-home .news-panel ul { margin:0; padding:0; list-style:none; }
+    .s2-home .news-panel li {
+        display:grid; grid-template-columns:104px 1fr; gap:.95rem;
+        padding:.72rem 0; border-top:1px solid #edf0f2; font-size:.84rem; line-height:1.45;
+    }
+    .s2-home .news-panel li:first-child { border-top:0; }
+    .s2-home .news-date {
+        color:#008568; font-size:.78rem; font-weight:800; letter-spacing:.01em;
+    }
+    .s2-home .news-text { color:#30383d; }
+    @media (max-width:720px){
+        .s2-home .research-grid{grid-template-columns:1fr;}
+        .s2-home .focus-card:last-child{grid-column:auto;}
+        .s2-home .news-panel li{grid-template-columns:1fr;gap:.18rem;}
+    }
+
+    </style>
+
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://use.fontawesome.com/3f74c5cc7b.js"></script>
 
-	<!-- Default Statcounter code for Secure Software Lab
-	https://s2-lab.github.io/index.html -->
-	<script type="text/javascript">
-	var sc_project=12914337; 
-	var sc_invisible=1; 
-	var sc_security="c628f69b"; 
-	</script>
-	<script type="text/javascript"
-	src="https://www.statcounter.com/counter/counter.js" async></script>
-	<noscript><div class="statcounter"><a title="Web Analytics"
-	href="https://statcounter.com/" target="_blank"><img class="statcounter"
-	src="https://c.statcounter.com/12914337/0/c628f69b/1/" alt="Web Analytics"
-	referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-	<!-- End of Statcounter Code -->
-		
+    <!-- Default Statcounter code for Secure Software Lab
+    https://s2-lab.github.io/index.html -->
+    <script type="text/javascript">
+        var sc_project=12914337;
+        var sc_invisible=1;
+        var sc_security="c628f69b";
+    </script>
+    <script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics"
+        href="https://statcounter.com/" target="_blank"><img class="statcounter"
+        src="https://c.statcounter.com/12914337/0/c628f69b/1/" alt="Web Analytics"
+        referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <!-- End of Statcounter Code -->
 </head>
+
 <body>
     <div id="wrapper">
         <div id="header-wrap"></div>
@@ -42,66 +102,95 @@
         <div class="section">
             <div class="inner">
                 <div class="dis-flex content-wrap">
-                    <div class="main-content">
-                        <div class="content">                         
-                            <!-- <h5>S2Lab (Secure Software Lab)</h5> -->
-                            <p class="summary"> Our lab is dedicated to addressing various software and systems security problems. In particular, our research focus is designing and implementing advanced bug sanitization and mitigation techniques to protect operating systems and user applications in existing (e.g., mobile or web) and emerging areas (e.g., autonomous driving, drones, or ship) by leveraging compiler-based, fuzzing, and AI techniques.</p>
-							
-							<p><strong> We are always looking for motivated undergraduate/graduate students and postdocs who are excited about software and system security. 
-If you are interested in working with us, please drop an email to Yuseok Jeon (<a href="mailto:ys_jeon@korea.ac.kr">ys_jeon@korea.ac.kr</a>). </strong></p>
-                        </div>
-                        <div class="news-list">
-                          <h5>News</h5>
-                            <ul>
+                    <div class="main-content s2-home">
 
-				<li><strong>[Jun 2026]</strong> ICheck is accepted to ASE 2026. </li>	
-				<li><strong>[May 2026]</strong> RustGo is accepted to CCS 2026. </li>		
-				<li><strong>[Dec 2025]</strong> ICP-MIA is accepted to NDSS 2026. </li>						
-                <li><strong>[Sep 2025]</strong> Prof. Yuseok Jeon is serving as a PC at ACM CCS 2026. </li>					
-	            <li><strong>[Aug 2025]</strong> Prof. Yuseok Jeon is serving as an Associate Editor at ACM Computing Surveys (CSUR). </li>						
-                <li><strong>[Jun 2025]</strong> Prof. Yuseok Jeon is serving as a PC at USENIX Security 2026. </li>							
-				<li><strong>[May 2025]</strong> AHA-fuzz is accepted to ACM CCS 2025. </li>	
-				<li><strong>[Apr 2025]</strong> Prof. Yuseok Jeon is serving as a PC at NDSS 2026. </li>
-				<li><strong>[Mar 2025]</strong> Type++ is awarded Distinguished Paper Award at NDSS 2025. </li>	
-				<li><strong>[Mar 2025]</strong> S2 Lab moved to the CSE at Korea University. </li>	
-				<li><strong>[Jan 2025]</strong> PathFinder is accepted to IEEE/ACM ICSE 2025. </li>						
-				<li><strong>[Sep 2024]</strong> CMASan is accepted to IEEE S&P 2025. </li>						
-                                <li><strong>[Sep 2024]</strong> Two graduate students joined our group. Welcome Jaeeun Eom and Zeewung Shin ! </li>									    
-				<li><strong>[Aug 2024]</strong> Type++ is accepted to NDSS 2025. </li>
-				<li><strong>[Jul 2024]</strong> Prof. Yuseok Jeon is serving as a PC at USENIX Security 2025. </li>
-				<li><strong>[May 2024]</strong> Prof. Yuseok Jeon is serving as a PC at IEEE S&P 2025. </li>
-				<li><strong>[Mar 2024]</strong> ERASan is accepted to IEEE S&P 2024. </li>
-				<li><strong>[Feb 2024]</strong> Two graduate students joined our group. Welcome Wonil Jang and Youngjin Lee! </li>
-				<li><strong>[Jan 2024]</strong> Prof. Yuseok Jeon is serving as a PC at ACM CCS 2024. </li>
-                                <li><strong>[Aug 2023]</strong> One graduate student joined our group. Welcome Seongyun! </li>
-				<li><strong>[Apr 2023]</strong> Prof. Yuseok Jeon is serving as a PC at USENIX SECURITY 2024 and NDSS 2024 </li>			
-				<li><strong>[Mar 2023]</strong> Four graduate students joined our group. Welcome Jiun, Dongyeon, Minseong, and Taeyeong! </li>
-				<li><strong>[Aug 2022]</strong> Two graduate students joined our group. Welcome Sunghyun and Sanghoon! </li>
-				<li><strong>[Dec 2022]</strong> Perfect Spray is accepted to BlackHat EU 2023. </li>
-                                <li><strong>[Jul 2022]</strong> Pspray is accepted to USENIX Secrutiy 2023. </li>
-                                <li><strong>[Jul 2022]</strong> DriveFuzz is accepted to ACM CCS 2022. </li>
-				<li><strong>[Apr 2022]</strong> Prof. Yuseok Jeon is serving as a PC at USENIX SECURITY 2023 and NDSS 2023. </li>
-                                <li><strong>[Feb 2022]</strong> ShadowAuth is accepted to ASIACCS 2022. </li>
-                                <li><strong>[Nov 2021]</strong> SwarmFlawFinder is accepted to IEEE S&P 2022. </li>
-				<li><strong>[Apr 2021]</strong> Prof. Yuseok Jeon is serving as a PC at USENIX SECURITY 2022. </li>
-                                <li><strong>[Feb 2021]</strong> Our lab has been founded. </li>
+                        <section class="overview" aria-label="Research overview">
+                            <p>Our lab is dedicated to enhancing the security of software and AI systems through vulnerability detection and the enforcement of secure execution.</p>
+                        </section>
+
+                        <section class="research-focus" aria-labelledby="research-focus-title">
+                            <h2 class="section-heading" id="research-focus-title">Our recent research focuses on the following areas:</h2>
+                            <div class="research-grid">
+<article class="focus-card">
+                    <div class="focus-number">1</div>
+                    <div class="focus-copy"><h3>Open-Source Software</h3><p>detecting vulnerabilities in open-source software</p></div>
+                </article>
+<article class="focus-card">
+                    <div class="focus-number">2</div>
+                    <div class="focus-copy"><h3>Rust Security</h3><p>improving the security of Rust applications</p></div>
+                </article>
+<article class="focus-card">
+                    <div class="focus-number">3</div>
+                    <div class="focus-copy"><h3>Physical AI</h3><p>identifying vulnerabilities in physical AI, including robots, autonomous vehicles, and drones</p></div>
+                </article>
+<article class="focus-card">
+                    <div class="focus-number">4</div>
+                    <div class="focus-copy"><h3>AI Agent Security</h3><p>developing runtime enforcement approaches to prevent AI agent misbehavior</p></div>
+                </article>
+<article class="focus-card">
+                    <div class="focus-number">5</div>
+                    <div class="focus-copy"><h3>AI Model Security & Privacy</h3><p>detecting and mitigating security and privacy threats in AI models, including jailbreaks, backdoors, and membership inference attacks</p></div>
+                </article>
+                            </div>
+                        </section>
+
+                        <section class="join-box" aria-label="Join S2Lab">
+                            <p><strong>We are always looking for motivated undergraduate and graduate students, as well as postdoctoral researchers.</strong>
+                            If you are interested in working with us, please send an email to Yuseok Jeon
+                            (<a href="mailto:ys_jeon@korea.ac.kr">ys_jeon@korea.ac.kr</a>).</p>
+                        </section>
+
+                        <section class="news-panel" aria-labelledby="news-title">
+                            <h5 id="news-title">News</h5>
+                            <ul>
+<li><span class="news-date">Jun 2026</span><span class="news-text">ICheck is accepted to ASE 2026.</span></li>
+<li><span class="news-date">May 2026</span><span class="news-text">RustGo is accepted to CCS 2026.</span></li>
+<li><span class="news-date">Dec 2025</span><span class="news-text">ICP-MIA is accepted to NDSS 2026.</span></li>
+<li><span class="news-date">Sep 2025</span><span class="news-text">Prof. Yuseok Jeon is serving as a PC at ACM CCS 2026.</span></li>
+<li><span class="news-date">Aug 2025</span><span class="news-text">Prof. Yuseok Jeon is serving as an Associate Editor at ACM Computing Surveys (CSUR).</span></li>
+<li><span class="news-date">Jun 2025</span><span class="news-text">Prof. Yuseok Jeon is serving as a PC at USENIX Security 2026.</span></li>
+<li><span class="news-date">May 2025</span><span class="news-text">AHA-fuzz is accepted to ACM CCS 2025.</span></li>
+<li><span class="news-date">Apr 2025</span><span class="news-text">Prof. Yuseok Jeon is serving as a PC at NDSS 2026.</span></li>
+<li><span class="news-date">Mar 2025</span><span class="news-text">Type++ is awarded Distinguished Paper Award at NDSS 2025.</span></li>
+<li><span class="news-date">Mar 2025</span><span class="news-text">S2 Lab moved to the CSE at Korea University.</span></li>
+<li><span class="news-date">Jan 2025</span><span class="news-text">PathFinder is accepted to IEEE/ACM ICSE 2025.</span></li>
+<li><span class="news-date">Sep 2024</span><span class="news-text">CMASan is accepted to IEEE S&P 2025.</span></li>
+<li><span class="news-date">Sep 2024</span><span class="news-text">Two graduate students joined our group. Welcome Jaeeun Eom and Zeewung Shin !</span></li>
+<li><span class="news-date">Aug 2024</span><span class="news-text">Type++ is accepted to NDSS 2025.</span></li>
+<li><span class="news-date">Jul 2024</span><span class="news-text">Prof. Yuseok Jeon is serving as a PC at USENIX Security 2025.</span></li>
+<li><span class="news-date">May 2024</span><span class="news-text">Prof. Yuseok Jeon is serving as a PC at IEEE S&P 2025.</span></li>
+<li><span class="news-date">Mar 2024</span><span class="news-text">ERASan is accepted to IEEE S&P 2024.</span></li>
+<li><span class="news-date">Feb 2024</span><span class="news-text">Two graduate students joined our group. Welcome Wonil Jang and Youngjin Lee!</span></li>
+<li><span class="news-date">Jan 2024</span><span class="news-text">Prof. Yuseok Jeon is serving as a PC at ACM CCS 2024.</span></li>
+<li><span class="news-date">Aug 2023</span><span class="news-text">One graduate student joined our group. Welcome Seongyun!</span></li>
+<li><span class="news-date">Apr 2023</span><span class="news-text">Prof. Yuseok Jeon is serving as a PC at USENIX SECURITY 2024 and NDSS 2024</span></li>
+<li><span class="news-date">Mar 2023</span><span class="news-text">Four graduate students joined our group. Welcome Jiun, Dongyeon, Minseong, and Taeyeong!</span></li>
+<li><span class="news-date">Aug 2022</span><span class="news-text">Two graduate students joined our group. Welcome Sunghyun and Sanghoon!</span></li>
+<li><span class="news-date">Dec 2022</span><span class="news-text">Perfect Spray is accepted to BlackHat EU 2023.</span></li>
+<li><span class="news-date">Jul 2022</span><span class="news-text">Pspray is accepted to USENIX Secrutiy 2023.</span></li>
+<li><span class="news-date">Jul 2022</span><span class="news-text">DriveFuzz is accepted to ACM CCS 2022.</span></li>
+<li><span class="news-date">Apr 2022</span><span class="news-text">Prof. Yuseok Jeon is serving as a PC at USENIX SECURITY 2023 and NDSS 2023.</span></li>
+<li><span class="news-date">Feb 2022</span><span class="news-text">ShadowAuth is accepted to ASIACCS 2022.</span></li>
+<li><span class="news-date">Nov 2021</span><span class="news-text">SwarmFlawFinder is accepted to IEEE S&P 2022.</span></li>
+<li><span class="news-date">Apr 2021</span><span class="news-text">Prof. Yuseok Jeon is serving as a PC at USENIX SECURITY 2022.</span></li>
+<li><span class="news-date">Feb 2021</span><span class="news-text">Our lab has been founded.</span></li>
                             </ul>
+                        </section>
+
                     </div>
                 </div>
             </div>
         </div>
 
         <div id="footer-wrap"></div>
-
         <div class="top-btn"><a href="#">TOP</a></div>
 
         <script>
             $(function(){
                 $("#header-wrap").load("header.html");
-               // $("#footer-wrap").load("footer.html"); 
+                // $("#footer-wrap").load("footer.html");
             });
         </script>
-
     </div>
 </body>
 </html>
