@@ -14,18 +14,14 @@
     <style>
 
     /* Version 5 — Modern focus cards + refined news feed */
-    .s2-home { --accent:#00a982; --ink:#172129; --muted:#657078; --line:#e3e9ec; --soft:#f5f8f8; }
+    .s2-home { --accent:#007bff; --ink:#172129; --muted:#657078; --line:#e3e9ec; --soft:#f5f8f8; }
     .s2-home * { box-sizing:border-box; }
     .s2-home .overview {
         position:relative; margin:0 0 2.2rem; padding:1.6rem 1.7rem 1.55rem 1.8rem;
         border:1px solid var(--line); border-radius:14px; background:#fff;
         box-shadow:0 8px 26px rgba(14,40,33,.055);
     }
-    .s2-home .overview::before {
-        content:"S2 LAB RESEARCH"; display:block; margin-bottom:.6rem;
-        color:#008b6d; font-size:.72rem; font-weight:800; letter-spacing:.12em;
-    }
-    .s2-home .overview p { margin:0; max-width:1030px; font-size:1.02rem; line-height:1.75; color:var(--ink); }
+.s2-home .overview p { margin:0; max-width:1030px; font-size:1.02rem; line-height:1.75; color:var(--ink); }
     .s2-home .section-heading { margin:0 0 1rem; font-size:1.2rem; font-weight:750; color:var(--ink); }
     .s2-home .research-grid {
         display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.9rem; margin-bottom:1.4rem;
@@ -37,17 +33,17 @@
     .s2-home .focus-card:last-child { grid-column:1/-1; }
     .s2-home .focus-number {
         flex:0 0 38px; width:38px; height:38px; display:flex; align-items:center; justify-content:center;
-        border-radius:9px; background:#132c26; color:#67ddbb; font-size:.9rem; font-weight:800;
+        border-radius:9px; background:#007bff; color:#ffffff; font-size:.9rem; font-weight:800;
     }
     .s2-home .focus-copy h3 { margin:.05rem 0 .35rem; font-size:.96rem; font-weight:750; color:var(--ink); }
     .s2-home .focus-copy p { margin:0; font-size:.84rem; line-height:1.52; color:#59636a; }
     .s2-home .join-box {
         margin:1.5rem 0 2.8rem; padding:1.2rem 1.35rem; border-radius:12px;
-        background:#ecf8f5; border:1px solid #d1ebe4;
+        background:#f3f8ff; border:1px solid #d9e9ff;
     }
     .s2-home .join-box p { margin:0; font-size:.89rem; line-height:1.65; }
     .s2-home .join-box strong { font-weight:750; }
-    .s2-home .join-box a { color:#007d61; font-weight:750; }
+    .s2-home .join-box a { color:#007bff; font-weight:750; }
     .s2-home .news-panel {
         padding:1.35rem 1.45rem 1.1rem; border:1px solid var(--line); border-radius:14px; background:#fff;
     }
@@ -59,7 +55,7 @@
     }
     .s2-home .news-panel li:first-child { border-top:0; }
     .s2-home .news-date {
-        color:#008568; font-size:.78rem; font-weight:800; letter-spacing:.01em;
+        color:#007bff; font-size:.78rem; font-weight:800; letter-spacing:.01em;
     }
     .s2-home .news-text { color:#30383d; }
     @media (max-width:720px){
@@ -113,7 +109,7 @@
                             <div class="research-grid">
 <article class="focus-card">
                     <div class="focus-number">1</div>
-                    <div class="focus-copy"><h3>Open-Source Software</h3><p>detecting vulnerabilities in open-source software</p></div>
+                    <div class="focus-copy"><h3>Open-Source Software Security</h3><p>detecting vulnerabilities in open-source software</p></div>
                 </article>
 <article class="focus-card">
                     <div class="focus-number">2</div>
@@ -121,7 +117,7 @@
                 </article>
 <article class="focus-card">
                     <div class="focus-number">3</div>
-                    <div class="focus-copy"><h3>Physical AI</h3><p>identifying vulnerabilities in physical AI, including robots, autonomous vehicles, and drones</p></div>
+                    <div class="focus-copy"><h3>Physical AI Security</h3><p>identifying vulnerabilities in physical AI, including robots, autonomous vehicles, and drones</p></div>
                 </article>
 <article class="focus-card">
                     <div class="focus-number">4</div>
