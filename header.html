@@ -1,28 +1,114 @@
-<!-- S2Lab KU Crimson override -->
-<style>
-    #header .nav > ul > li > a,
-    #header .m-nav > ul > li > a {
-        color: #862633 !important;
-    }
-
-    #header .nav > ul > li:hover > a,
-    #header .nav > ul > li > a:hover,
-    #header .m-nav > ul > li > a:hover {
-        color: #862633 !important;
-    }
-
-    #header .all-menu span {
-        background-color: #862633 !important;
-    }
-</style>
-<!-- /S2Lab KU Crimson override -->
 <script src="js/script.js"></script>
-<header id="header">
+<style>
+#header.s2-header {
+    background:#fff;
+    position:relative;
+    z-index:100;
+}
+#header.s2-header .hd-wrap {
+    align-items:center;
+}
+#header.s2-header .logo {
+    margin-right:3rem;
+}
+#header.s2-header .logo a {
+    display:flex;
+    align-items:center;
+    margin:0;
+}
+#header.s2-header .logo img {
+    display:block;
+    width:auto;
+    object-fit:contain;
+}
+#header.s2-header .nav {
+    width:auto;
+    flex:1;
+}
+#header.s2-header .nav > ul {
+    display:flex;
+    align-items:center;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+#header.s2-header .nav > ul > li {
+    display:flex;
+    align-items:center;
+}
+
+#header.s2-header .nav > ul > li,
+#header.s2-header .m-nav > ul > li {
+    list-style:none;
+}
+
+#header.s2-header .m-nav > ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+#header.s2-header .nav a,
+#header.s2-header .m-nav a {
+    text-decoration:none !important;
+}
+#header.s2-header .nav > ul > li > a {
+    color:#111111 !important;
+    text-decoration:none !important;
+    font-weight:650;
+    letter-spacing:-0.01em;
+    white-space:nowrap;
+}
+#header.s2-header .nav > ul > li:hover > a,
+#header.s2-header .nav > ul > li > a:hover {
+    color:#111111 !important;
+}
+#header.s2-header .m-nav > ul > li > a {
+    color:#111111 !important;
+    font-size:1.05rem;
+    font-weight:650;
+}
+#header.s2-header .all-menu span {
+    background-color:#111111 !important;
+}
+@media screen and (max-width:950px) {
+    #header.s2-header .logo {
+        margin-right:0;
+    }
+}
+</style>
+
+<style>
+#header.s2-header {
+    padding:1.45rem 0 !important;
+    border-bottom:1px solid #E8E8E8;
+}
+#header.s2-header .logo img {
+    height:64px;
+}
+#header.s2-header .nav > ul {
+    gap:.8rem;
+}
+#header.s2-header .nav > ul > li > a {
+    padding:.78rem 1.15rem;
+    font-size:1.1rem;
+    font-weight:700;
+    transition:transform .18s ease;
+}
+#header.s2-header .nav > ul > li > a:hover {
+    transform:translateY(-2px);
+}
+</style>
+
+<header id="header" class="s2-header">
     <div class="hd-wrap inner dis-flex">
         <div class="logo">
-            <a href="/" style="margin-bottom: 0px;margin-top: 0px;"><img src='/img/s2lab_logo.jpg.jpg' height=50 style="margin-bottom: 0px;margin-top: 0px;"></a>
+            <a href="/" aria-label="S2Lab Home">
+                <img src="/img/s2lab_logo.jpg.jpg" alt="S2Lab">
+            </a>
         </div>
-        <nav class="nav">
+
+        <nav class="nav" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="members.html">Members</a></li>
@@ -30,13 +116,15 @@
                 <li><a href="sponsors.html">Sponsors</a></li>
             </ul>
         </nav>
-        <div class="all-menu">
+
+        <div class="all-menu" aria-label="Open mobile menu">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
         </div>
-        <nav class="m-nav">
+
+        <nav class="m-nav" aria-label="Mobile navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="members.html">Members</a></li>
